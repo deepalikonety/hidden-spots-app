@@ -10,7 +10,7 @@ A mobile app built using **React Native (Expo)** that lets users explore, share,
 
 ## 📽️ Demo Video
 
-📎 [Watch Demo on Google Drive](https://drive.google.com/your-demo-link-here](https://drive.google.com/file/d/1YCAUSzitvNr-O4EXiMXQdiGSu2oKBJ0f/view?usp=sharing)  
+📎 [Watch Demo on Google Drive](https://drive.google.com/file/d/1YCAUSzitvNr-O4EXiMXQdiGSu2oKBJ0f/view?usp=sharing)  
 *(Replace with your actual video link)*
 
 ---
