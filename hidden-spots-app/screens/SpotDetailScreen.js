@@ -11,6 +11,7 @@ import {
   Dimensions,
 } from 'react-native';
 import Slider from '@react-native-community/slider';
+import { BACKEND_URL } from '@env';
 
 export default function SpotDetailScreen({ route, navigation }) {
   const { spot, isUserSpot, onDelete } = route.params;
@@ -41,7 +42,7 @@ export default function SpotDetailScreen({ route, navigation }) {
     spot.ratings = newRatings;
     setRatingCount(ratingCount + 1);
     setRatingsSubmitted(true);
-    Alert.alert('Thank you!', 'Your ratings have been averaged successfully!');
+    Alert.alert('Thank you!', 'Your ratings have been addedsuccessfully!');
   };
 
   const handleAddComment = () => {

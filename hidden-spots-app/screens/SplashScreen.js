@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { View, Image, StyleSheet } from 'react-native';
-import SplashLogo from '../assets/logo.jpg'; // your added image
+import SplashLogo from '../assets/logo.jpg'; 
 
 export default function SplashScreen({ navigation }) {
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace('Map'); // or 'Home' if you want to go to another screen
-    }, 2000); // 2 seconds
+      navigation.replace('Map'); 
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
