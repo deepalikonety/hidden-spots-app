@@ -1,6 +1,6 @@
 # 🌍 Hidden Spots - Location-Based Community Platform
 
-A mobile application developed using React Native (Expo) that enables users to discover, add, and rate hidden locations across **Gwalior**, India. The platform supports user-generated content including photos, ratings, and vibe tagging, making it a community-driven explorer tool.
+A mobile app built using **React Native (Expo)** that lets users explore, share, and rate hidden gems around **Gwalior**, India. The app is community-driven — users can add custom spots, rate their vibe, and upload images!
 
 <p align="left">
   <img alt="Made with love" src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-red">
@@ -8,70 +8,91 @@ A mobile application developed using React Native (Expo) that enables users to d
 
 ---
 
+## 📽️ Demo Video
+
+📎 [Watch Demo on Google Drive]([https://drive.google.com/your-demo-link-here](https://drive.google.com/file/d/1YCAUSzitvNr-O4EXiMXQdiGSu2oKBJ0f/view?usp=sharing))  
+*(Replace with your actual video link)*
+
+---
+
 ## 🚀 Features
 
-- 📍 Map-based interface to explore hidden spots
-- ➕ Add new spots with images, coordinates, and a custom vibe
-- 🌈 Live color-coded vibe legend (including custom vibes)
-- 📷 Upload up to 5 images per spot via Expo Image Picker
-- 🌟 Rate each spot on uniqueness, vibe, safety, and crowd
-- 💬 Add user comments with optional name
-- 🗑️ Delete support for user-added spots
-- ☁️ Cloudinary integration for optimized image storage
-- 🧠 Backend API powered by Express.js and MongoDB
+- 📍 Interactive **map** to explore hidden spots
+- ➕ **Add new locations** with photos, coordinates, and a custom vibe
+- 🌈 Color-coded **vibe legend**, including user-defined ones
+- 📷 **Upload up to 5 images** per spot via Expo Image Picker
+- 🌟 Rate spots on **Uniqueness, Vibe, Safety, Crowd**
+- 💬 **Commenting system** (name optional)
+- 🗑️ **Delete** support for user-added spots
+- ☁️ **Cloudinary** integration for image hosting
+- 🔄 **Live syncing** between frontend and backend (MongoDB)
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### 📱 Frontend
+
 - React Native (Expo)
-- react-native-maps
-- expo-image-picker
-- axios
-- @react-native-picker/picker
-- @react-native-community/slider
+- `react-native-maps`
+- `expo-image-picker`
+- `axios`
+- `@react-native-picker/picker`
+- `@react-native-community/slider`
 
 ### 🌐 Backend
-- Node.js + Express
+
+- Node.js + Express.js
 - MongoDB + Mongoose
 - Cloudinary SDK
 
 ---
 
-## 📂 Project Structure
+## 📂 Folder Structure
 
 hidden-spots-project/
-├── hidden-spots-app/ # Frontend (React Native)
+├── hidden-spots-app/ # Frontend (Expo React Native)
 ├── hidden-spots-backend/ # Backend (Express + MongoDB)
+
 
 ---
 
 ## 🔒 Environment Variables
 
-> Ensure `.env` files are added to `.gitignore` and not pushed to the repository.
+Ensure you create `.env` files for both **frontend** and **backend** and **never commit them** to GitHub.
 
-### `.env` (Frontend)
-```env
+### 📱 Frontend `.env`
+
 BACKEND_URL=http://your-local-ip:5000
-GOOGLE_MAPS_API_KEY=your-api-key
+GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+
+---
+
+
+> In code, access via: `import { BACKEND_URL, GOOGLE_MAPS_API_KEY } from '@env';`
+
+### 🌐 Backend `.env`
 
 PORT=5000
-MONGO_URI=your-mongo-uri
-CLOUDINARY_NAME=cloudinary-name
-CLOUDINARY_API_KEY=your-key
-CLOUDINARY_API_SECRET=your-secret
+MONGO_URI=your-mongodb-uri
+CLOUDINARY_NAME=your-cloud-name
+CLOUDINARY_API_KEY=your-cloudinary-key
+CLOUDINARY_API_SECRET=your-cloudinary-secret
 
-📌 Future Enhancements
-🔐 Authentication and user accounts
+## 🧠 Future Enhancements
 
-🔖 Spot bookmarking / favoriting
+- 🔐 Authentication & user accounts  
+- 🔖 Spot bookmarking & favoriting  
+- 📊 Filter by vibe, rating, and location  
+- 🌐 Offline map access & caching  
+- 🏆 Featured Spots + Admin panel  
 
-📊 Sorting and filtering by rating
+---
 
-🌐 Offline access and caching
+## 📄 License
 
-📄 License
-This project is for educational and evaluation purposes only.
+This project was developed solely for academic and evaluation purposes.
+
+---
 
 Made with ❤️ by Deepali
